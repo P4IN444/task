@@ -26,6 +26,9 @@ $(NAME): $(OBJS)
 bonus: all $(OBJBNS)
 	ar rcs $(NAME) $(OBJBNS)
 
+test: $(NAME)
+	$(CC) $(CFLAGS) main.c -L. -lft -o test
+
 %.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
@@ -33,7 +36,7 @@ clean:
 	rm -f $(OBJS) $(OBJBNS)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME) test
 
 re: fclean all
 
