@@ -6,7 +6,7 @@
 /*   By: aamajjou <aamajjou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 18:10:06 by aamajjou          #+#    #+#             */
-/*   Updated: 2026/05/19 18:14:52 by aamajjou         ###   ########.fr       */
+/*   Updated: 2026/05/19 18:18:54 by aamajjou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int	main(void)
 	str = ft_strjoin("42", "Network");
 	assert(strcmp(str, "42Network") == 0);
 	free(str);
-	
 	printf("Valid tests passed!\n");
 	printf("fix and Running the failing test...\n");
 	assert(ft_strlen("pass") == 4);
