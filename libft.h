@@ -21,6 +21,16 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+typedef struct s_heqp
+{
+	int	*arr;
+	int	cap;
+	int	size;
+}	t_heap;
+
+int			pop(t_heap *heap);
+int    	insert(t_heap *heap, int *element);
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
 int			ft_isalnum(int c);
